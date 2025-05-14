@@ -70,8 +70,8 @@ img {
 
 .main-content {
     flex: 1;
-    margin-left: 300px;
-    padding: 40px;
+    margin-left: 290px;
+    padding: 1px;
     background-color: #f8f9fa;
 }
   /* Layout */
@@ -144,7 +144,7 @@ img {
 .blog-posts {
     width: 70%;
     float: left;
-    padding-right: 30px;
+    padding-right: 0;
 }
 
 .sidebar-widgets {
@@ -154,10 +154,10 @@ img {
 
 .post {
 background: #fff;
-margin-bottom: 40px;
+margin-bottom:0;
 border-radius: 5px;
 overflow: hidden;
-box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+/* box-shadow: 0 2px 10px rgba(0,0,0,0.05); */
 display: flex;
 align-items: flex-start; 
 padding: 20px;
@@ -218,10 +218,10 @@ letter-spacing: 1px;
 /* Widget Styles */
 .widget {
     background: #fff;
-    padding: 25px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 20px;
+    /* margin-bottom: 30px; */
+    /* border-radius: 5px; */
+    /* box-shadow: 0 2px 10px rgba(0,0,0,0.05); */
 }
 
 .widget-title {
@@ -332,7 +332,7 @@ letter-spacing: 1px;
 /* footer  */
 /* Popular Posts Widget */
 .widget.popular-posts {
-margin-bottom: 30px;
+margin-bottom: 0.2px;
 }
 
 .popular-post {
@@ -385,7 +385,7 @@ margin-right: 10px;
 
 /* Tag Cloud Widget */
 .widget.tag-cloud {
-margin-bottom: 30px;
+margin-bottom: 0.2px;
 }
 
 .tags {
@@ -411,7 +411,7 @@ color: #fff;
 
 /* Newsletter Widget with Background Image */
 .widget.newsletter-widget {
-margin-bottom: 30px;
+margin-bottom: 0.1px;
 background-image: url(image/image_8.jpg);
 background-size: cover;
 background-position: center;
@@ -427,7 +427,7 @@ left: 0;
 right: 0;
 bottom: 0;
 background: rgba(0, 0, 0, 0.6);
-border-radius: 5px;
+
 }
 
 .widget.newsletter-widget > * {
@@ -513,8 +513,7 @@ line-height: 1.6;
 .sidebar-box {
 background: #fff;
 padding: 25px;
-margin-bottom: 30px;
-border-radius: 5px;
+margin-bottom: 0.1px;
 box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
@@ -788,7 +787,7 @@ margin-bottom: 0;
     
     .blog-posts {
         width: 70%;
-        padding-right: 30px;
+        padding-right: 1px;
     }
     
     .sidebar-widgets {

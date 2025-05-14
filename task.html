@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea Moore - Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .page-container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 300px;
+            background: #fff;
+            padding: 30px;
+            position: fixed;
+            height: 100%;
+        }
+
+        .logo {
+            font-size: 24px;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .main-menu li {
+            margin-bottom: 15px;
+            list-style: none;
+        }
+
+        .main-menu a {
+            display: block;
+            padding: 8px 0;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .newsletter {
+            margin: 30px 0;
+        }
+
+        .newsletter h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .copyright {
+            font-size: 14px;
+            color: #777;
+            margin-top: 30px;
+        }
+
+        .main-content {
+            flex: 1;
+            margin-left: 300px;
+            padding: 0.1px;
+        }
+
+        .post {
+            background: #fff;
+            /* margin-bottom: 40px; */
+            padding: 30px;
+            border-radius: 5px;
+        }
+
+        .post h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .post-meta {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .post-meta span {
+            margin-right: 15px;
+        }
+
+        .post-content {
+            margin-bottom: 15px;
+        }
+
+        .read-more {
+            color: #007bff;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        .sidebar-widgets {
+            width: 30%;
+            float: right;
+            padding-left: 0.3px;
+        }
+
+        .widget {
+            background: #fff;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+
+        .widget-title {
+            font-size: 18px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .search-box {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .categories-list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+            list-style: none;
+        }
+
+        .categories-list a {
+            display: flex;
+            justify-content: space-between;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .popular-post {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .post-thumb {
+            width: 80px;
+            height: 80px;
+            background: #eee;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .post-info h4 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .post-info .post-meta {
+            font-size: 12px;
+            color: #777;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .blog-posts {
+            width: 70%;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                position: static;
+                width: 100%;
+                height: auto;
+            }
+            
+            .main-content {
+                margin-left: 0;
+                padding: 20px;
+            }
+            
+            .row {
+                flex-direction: column;
+            }
+            
+            .blog-posts, 
+            .sidebar-widgets {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="sidebar">
+            <div class="logo">Andrea Moore</div>
+            
+            <ul class="main-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            
+            <div class="newsletter">
+                <h3>Subscribe for newsletter</h3>
+                <input type="text" class="form-input" placeholder="Enter Email Address">
+                <button type="submit" class="submit-btn">Subscribe</button>
+            </div>
+            
+            <div class="copyright">
+                <p>Copyright ©2025 All rights reserved</p>
+                <p>This template is made with 👍 by Colorlib</p>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="row">
+                <div class="blog-posts">
+                    <article class="post">
+                        <h2>A Loving Heart is the Truest Wisdom</h2>
+                        <div class="post-meta">
+                            <span>June 28, 2019</span>
+                            <span>Travel</span>
+                            <span>5 Comment</span>
+                        </div>
+                        <div class="post-content">
+                            <p>A small river named Duden flows by their place and supplies it with the necessary regelfalia.</p>
+                        </div>
+                        <a href="#" class="read-more">Read More &gt;</a>
+                    </article>
+                    
+                    <article class="post">
+                        <h2>Great Things Never Came from Comfort Zone</h2>
+                        <div class="post-meta">
+                            <span>June 28, 2019</span>
+                            <span>Travel</span>
+                            <span>5 Comment</span>
+                        </div>
+                        <div class="post-content">
+                            <p>A small river named Duden flows by their place and supplies it with the necessary regelfalia.</p>
+                        </div>
+                        <a href="#" class="read-more">Read More &gt;</a>
+                    </article>
+                </div>
+                
+                <div class="sidebar-widgets">
+                    <div class="search-box">
+                        <input type="text" placeholder="Type a keyword and ↑">
+                    </div>
+                    
+                    <div class="widget">
+                        <h3 class="widget-title">Categories</h3>
+                        <ul class="categories-list">
+                            <li><a href="#">Fashion <span>(6)</span></a></li>
+                            <li><a href="#">Technology <span>(8)</span></a></li>
+                            <li><a href="#">Travel <span>(2)</span></a></li>
+                            <li><a href="#">Food <span>(2)</span></a></li>
+                            <li><a href="#">Photography <span>(7)</span></a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="widget">
+                        <h3 class="widget-title">Popular Articles</h3>
+                        <div class="popular-post">
+                            <div class="post-thumb"></div>
+                            <div class="post-info">
+                                <h4><a href="#">Even the all-powerful Pointing has no control</a></h4>
+                                <div class="post-meta">
+                                    <span>June 28, 2019</span>
+                                    <span>5 Comment</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-post">
+                            <div class="post-thumb"></div>
+                            <div class="post-info">
+                                <h4><a href="#">Even the all-powerful Pointing has no control</a></h4>
+                                <div class="post-meta">
+                                    <span>June 28, 2019</span>
+                                    <span>5 Comment</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
